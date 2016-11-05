@@ -1,11 +1,11 @@
 @import "./css/animate.min.css";
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat-Regular'), url('./rsc/Montserrat-Regular.otf') format('opentype');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('./rsc/Montserrat-Regular.otf') format('opentype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 body {
@@ -37,21 +37,24 @@ body {
 }
 
 .tile h2 {
-    margin-top: 550px;
+    margin-top: 100px;
     text-align: center;
 }
 
 .chair .tile {
-    /*background-image: url("./img/Chairs-Huge.jpg");*/
-    background-color: mediumseagreen;
+    background-image: url("./rsc/Chairs.jpg");
+    background-size: 100% auto;
+    /*background-color: mediumseagreen;*/
 }
 
 .bench .tile {
-    /*background-image: url("./img/Bench-Huge.jpg");*/
-    background-color: dodgerblue;
+    background-image: url("./rsc/Bench.jpg");
+    background-size: 100% auto;
+    /*background-color: dodgerblue;*/
 }
 
 .gifts .tile {
-    /*background-image: url("./img/Bowl-Huge.jpg");*/
-    background-color: darkred;
+    background-image: url("./rsc/Bowl.jpg");
+    background-size: 100% auto;
+    /*background-color: darkred;*/
 }

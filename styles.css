@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-menu {
+    display: flex;
+    width: 1024px;
+    height: 768px;
+}
+
+.main-menu .content {
+    flex: 1;
+    height: 100%;
+}
+
+.tile {
+    padding: 20px;
+    /*transition: all .25s ease-out;*/
+    /*background: rgba(0,0,0,0.5);*/
+    cursor: pointer;
+    height: 100%;
+    color: white;
+    font-size: 2em;
+}
+
+.tile h2 {
+    margin-top: 550px;
+    text-align: center;
+}
+
+.chair .tile {
+    /*background-image: url("./img/Chairs-Huge.jpg");*/
+    background-color: mediumseagreen;
+}
+
+.bench .tile {
+    /*background-image: url("./img/Bench-Huge.jpg");*/
+    background-color: dodgerblue;
+}
+
+.gifts .tile {
+    /*background-image: url("./img/Bowl-Huge.jpg");*/
+    background-color: darkred;
+}

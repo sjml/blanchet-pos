@@ -3,28 +3,22 @@ $(document).ready(function() {
     $('.tile').on('click', onTileClick);
 });
 
-$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    },
-    animateHide: function (animationName) {
-        this.animateCss(animationName);
-        // this.();
-    }
-});
-
 function onTileClick(event) {
     var clicked = event.currentTarget;
-    console.log(clicked);
+    var parent = $(clicked).parent(".content");
+    var index = parent.index();
+    var total = parent.siblings().length + 1;
     $('.tile').each(function() {
-        if (this == clicked) {
-
+        if (this != clicked) {
+            if ( $(this).parent(".content").index() < index ) {
+                $(this).addClass('animated fadeOutLeft');
+            }
+            else {
+                $(this).addClass('animated fadeOutRight');
+            }
         }
         else {
-            $(this).animateOut('fadeOutLeft');
+            // we have other plans for you
         }
     });
 }

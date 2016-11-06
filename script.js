@@ -56,12 +56,15 @@ function onTileClick(event) {
 
 
         var destination = clicked.dataset.page;
-        console.log(destination);
-        $(".text[data-page='" + destination + "']").show();
+        var selector = ".text[data-page='" + destination + "']";
+        $(selector).show();
+
         $(".outLeft, .outRight").hide();
         $(clicked).addClass("noTransition");
         $(clicked).removeClass("shiftLeft shiftRight");
         var hack = clicked.offsetHeight; // to trigger a reflow! 
         $(clicked).removeClass("noTransition");
+        
+        $(selector).removeClass("out");
     });
 }

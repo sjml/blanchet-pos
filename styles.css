@@ -83,6 +83,12 @@ body {
     font-size: 200%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    transition: transform 0.75s, opacity 0.75s;    
+}
+
+.text.out {
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .text p {

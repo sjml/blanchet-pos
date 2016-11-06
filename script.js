@@ -6,7 +6,7 @@ $.fn.extend({
     animateCss: function (animationName, callback) {
         var self = this;
         return new Promise( function(resolve, reject) {
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            var animationEnd = 'webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd';
             self.addClass(animationName).one(animationEnd, function() {
                 if (callback) {
                     callback.bind(self)();
@@ -52,7 +52,12 @@ function onTileClick(event) {
     });
     Promise.all(animPromises).then(function() {
         // tile transition done
-
         animPromises = [];
+
+
+        var destination = clicked.dataset.page;
+        console.log(destination);
+        $(".text[data-page='" + destination + "']").show();
+        $(".outLeft, .outRight").hide();
     });
 }

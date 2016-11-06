@@ -38,19 +38,19 @@ body {
     text-align: center;
 }
 
-.tile.chair {
+.tile[data-page='chair'] {
     background-image: url("./rsc/Chairs.jpg");
     background-size: 100% auto;
     /*background-color: mediumseagreen;*/
 }
 
-.tile.bench {
+.tile[data-page='bench'] {
     background-image: url("./rsc/Bench.jpg");
     background-size: 100% auto;
     /*background-color: dodgerblue;*/
 }
 
-.tile.gifts {
+.tile[data-page='gifts'] {
     background-image: url("./rsc/Bowl.jpg");
     background-size: 100% auto;
     /*background-color: darkred;*/
@@ -58,4 +58,5 @@ body {
 
 .text {
     display: none;
+    flex: 2;
 }

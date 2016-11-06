@@ -5,12 +5,11 @@ $(document).ready(function() {
 
 function onTileClick(event) {
     var clicked = event.currentTarget;
-    var parent = $(clicked).parent(".content");
-    var index = parent.index();
-    var total = parent.siblings().length + 1;
+    var index = $(clicked).index();
+    var total = $(clicked).siblings().length + 1;
     $('.tile').each(function() {
         if (this != clicked) {
-            if ( $(this).parent(".content").index() < index ) {
+            if ( $(this).index() < index ) {
                 $(this).addClass('animated fadeOutLeft');
             }
             else {
@@ -19,6 +18,8 @@ function onTileClick(event) {
         }
         else {
             // we have other plans for you
+            var destination = clicked.dataset.page;
+            // window.history.pushState({}, destination, destination);
         }
     });
 }

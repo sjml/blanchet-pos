@@ -23,12 +23,9 @@ body {
     height: 768px;
 }
 
-.main-menu .content {
+.tile {
     flex: 1;
     height: 100%;
-}
-
-.tile {
     padding: 20px;
     cursor: pointer;
     height: 100%;
@@ -41,20 +38,24 @@ body {
     text-align: center;
 }
 
-.chair .tile {
+.tile.chair {
     background-image: url("./rsc/Chairs.jpg");
     background-size: 100% auto;
     /*background-color: mediumseagreen;*/
 }
 
-.bench .tile {
+.tile.bench {
     background-image: url("./rsc/Bench.jpg");
     background-size: 100% auto;
     /*background-color: dodgerblue;*/
 }
 
-.gifts .tile {
+.tile.gifts {
     background-image: url("./rsc/Bowl.jpg");
     background-size: 100% auto;
     /*background-color: darkred;*/
+}
+
+.text {
+    display: none;
 }

@@ -1,3 +1,11 @@
+/* hacks upon hacks... */
+.noTransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;

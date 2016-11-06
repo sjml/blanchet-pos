@@ -59,5 +59,9 @@ function onTileClick(event) {
         console.log(destination);
         $(".text[data-page='" + destination + "']").show();
         $(".outLeft, .outRight").hide();
+        $(clicked).addClass("noTransition");
+        $(clicked).removeClass("shiftLeft shiftRight");
+        var hack = clicked.offsetHeight; // to trigger a reflow! 
+        $(clicked).removeClass("noTransition");
     });
 }

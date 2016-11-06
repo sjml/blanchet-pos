@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // initialization
     $('.tile').on('click', onTileClick);
 });
 
@@ -8,8 +7,7 @@ $.fn.extend({
         var self = this;
         return new Promise( function(resolve, reject) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            self.addClass('animated ' + animationName).one(animationEnd, function() {
-                $(self).removeClass('animated ' + animationName);
+            self.addClass(animationName).one(animationEnd, function() {
                 if (callback) {
                     callback.bind(self)();
                 }
@@ -26,26 +24,29 @@ function onTileClick(event) {
     }
     var clicked = event.currentTarget;
     var index = getVisibleIndex(clicked);
-    var numTiles = $(clicked).parent().children(".tile");
+    var numTiles = $(clicked).parent().children(".tile").length;
 
     var animPromises = [];
     $('.tile').each(function() {
         if (this != clicked) {
             if ( getVisibleIndex(this) < index ) {
-                animPromises.push($(this).animateCss('fadeOutLeft'));
+                animPromises.push($(this).animateCss('outLeft'));
             }
             else {
-                animPromises.push($(this).animateCss('fadeOutRight'));
+                animPromises.push($(this).animateCss('outRight'));
             }
         }
         else {
-            if (index < (numTiles / 2)) {
+            if (index === 0 || index === numTiles-1) {
+                // we don't gotta do nothin'
+            }
+            else if (index < (numTiles / 2)) {
                 // move us to the left
-                animPromises.push($(clicked).animateCss('slideOutLeft'));
+                animPromises.push($(clicked).animateCss('shiftLeft'));
             }
             else {
                 // move us to the right
-                animPromises.push($(clicked).animateCss('slideOutRight'));            
+                animPromises.push($(clicked).animateCss('shiftRight'));            
             }
         }
     });

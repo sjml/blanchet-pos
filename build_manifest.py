@@ -9,6 +9,7 @@ IGNORE_FILES = [
     "build_manifest.py",
     "todo.txt",
     "cache.manifest",
+    "README.md",
 ]
 IGNORE_DIRS = [
     ".git"

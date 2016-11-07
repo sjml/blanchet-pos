@@ -39,7 +39,7 @@ function setupText() {
     $(".text").each(function(index, el) {
         var pageName = this.dataset.page;
         $.get( "/pages/" + pageName + ".md", function(data) {
-            var md = marked(data);
+            var md = marked(data, {"smartypants": true});
             $(el).children(".text_container").html(md);
         });
     });
@@ -90,6 +90,8 @@ function onTileClick(event) {
             // tile transition done
             animPromises = [];
 
+            $(clicked).children(".back").animateRemove("out");
+
             var destination = clicked.dataset.page;
             var selector = ".text[data-page='" + destination + "']";
             $(selector).show();
@@ -120,6 +122,7 @@ function onTileClick(event) {
 
         var selector = ".text[data-page='" + prevState + "']";
         animPromises.push($(selector).animateAdd("out"));
+        animPromises.push($(clicked).children(".back").animateAdd("out"));        
 
         // this is a mess of nesting :(
         Promise.all(animPromises).then(function() {

@@ -1,10 +1,16 @@
-Blanchet Chairs are not only built, but designed by men in our recovery program. They are tailored to be more comfortable and more aesthetically pleasing. And though they *look* like traditional Adirondack chairs, they have several **key differences**:
+![Chairs](/rsc/Chair1.jpg)
 
-1. We've designed our chairs around your comfort. Traditional Adirondacks have a very low seat and are typically difficult to get in and out of. Our chairs have a different leg style that **elevates the seat**, making the standing process easy and painless, while still giving the relaxing comfort you are looking for.
-2. We have also designed the chairs with a curved back. The panels gently wrap with the contour of your back, providing the **ultimate comfort**. Ergonomically, our chairs are so comfortable that you won't *want* to stand up, cushion or no! 
-3. Our chairs are **oversized and luxurious**. You won't feel trapped or squished into them. In fact, the arms of the chair are sized perfectly for a coaster and cool beverage! 
-4. Most importantly, **all the money received from sales of these chairs goes directly back to the program** and helps to lift up the men in recovery at the Blanchet Farm. Unlike the traditional Adirondack chair, these Blanchet Chairs are unique, made with love, and are a proud accomplishment of men who are actively fighting to get their life back on track. 
+Blanchet Chairs are both built and designed by men in our recovery program. They resemble traditional Adirondack chairs, but there are several **key improvements**:
 
-Whether the sleek design is what caught your eye or the goals of the training program, please consider purchasing one of these unique creations. Blanchet chairs are so much more than just a staple of your backyard or patio. They are a testament to the hard work, sweat, and sacrifice of those fighting to stay clean and sober. Those fighting to create their own seecond chance. 
+1. **Elevated seat for more comfortable usage.** Traditional Adirondacks have a very low seat and can be tricky to stand from. We have a unique leg style that elevates the seat, combining both comfort and ease of standing. 
+2. **Curved back panel.** The back panels of the chair gently wrap around your back, almost like an embrace. Whether you choose to use a cushion or not, we've found them so comfortable that often we don't *want* to stand up.  
+3. **Oversized proportions.** We got tired of feeling trapped and squished in traditional Adirondack chairs, so built these to feel spacious, with extra-wide arms to support both a coaster and beverage of your choice!
+4. **Supporting recovery.** Most importantly, all the money received from sales of these chairs *goes directly back to the program*, helping to lift up the men in recovery at the Blanchet Farm. 
 
-Your purchase will directly make a difference in the lives of men working to rebuild their lives. 
+![Chairs](/rsc/Chair2.jpg)
+
+All the products of our woodshop are uniquely designed, made with love, and a proud accomplishment of men who are actively fighting to get their life back on track. More than simply a piece of backyard furniture, they are a testament to the hard work and sacrifice of those fighting to stay clean and sober. 
+
+Those fighting to create their own second chance. 
+
+**Your purchase will directly make a difference in the lives of men working to rebuild themselves.**

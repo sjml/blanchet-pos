@@ -1,6 +1,4 @@
 * Bugs:
     
 * Tasks:
-    * Write proper copy
-    * Find good quality pictures
     * set up square register data

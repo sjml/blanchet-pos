@@ -10,8 +10,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: local('Montserrat-Regular'), url('./rsc/Montserrat-Regular.otf') format('opentype');
+    src: local('Montserrat-Regular'), url('./rsc/fonts/Montserrat-Regular.otf') format('opentype');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    src: local('FontAwesome'), url('./rsc/fonts/FontAwesome.otf') format('opentype');
 }
 
 body {
@@ -19,6 +25,10 @@ body {
     margin: 0;
     height: 100vh;
     width: 1024px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    user-select: none;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -69,8 +79,26 @@ a.buy {
 }
 
 .tile h2 {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
+    font-size: 3.75vw;
+}
+
+.tile .back {
+    margin-top: 100px;
+    font-size: 100%;
+    text-align: center;
+    transition: opacity 1s;
+}
+
+.tile .back.out {
+    opacity: 0;
+}
+
+.tile .back .icon {
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 300%;
 }
 
 .tile[data-page='chair'] {
@@ -91,9 +119,15 @@ a.buy {
     /*background-color: darkred;*/
 }
 
+.tile[data-page='about'] {
+    background-image: url("./rsc/AboutTile.jpg");
+    background-size: 100% auto;
+    /*background-color: darkorange;*/
+}
+
 .text {
     display: none;
-    flex: 2;
+    flex: 3;
     font-size: 150%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -107,4 +141,8 @@ a.buy {
 
 .text_container {
     padding: 0 40px 0 40px;
+}
+
+.text_container img {
+    width: 100%;
 }

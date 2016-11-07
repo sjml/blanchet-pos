@@ -81,6 +81,7 @@ function onTileClick(event) {
             var destination = clicked.dataset.page;
             var selector = ".text[data-page='" + destination + "']";
             $(selector).show();
+            $(selector).scrollTop(0);            
 
             $(".outLeft, .outRight").hide();
             $(clicked).addClass("noTransition");

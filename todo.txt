@@ -1,2 +1,7 @@
 * Bugs:
     
+* Tasks:
+    * Add link to register
+    * Write proper copy
+    * Find good quality pictures
+    * Maybe set up markdown parser and json configuration? 

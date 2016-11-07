@@ -40,7 +40,7 @@ function setupText() {
         var pageName = this.dataset.page;
         $.get( "/pages/" + pageName + ".md", function(data) {
             var md = marked(data);
-            $(el).html(md);
+            $(el).children(".text_container").html(md);
         });
     });
 }

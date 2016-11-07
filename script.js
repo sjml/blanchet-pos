@@ -3,6 +3,8 @@ var CURRENT_STATE = "menu"; // "transition" and individual tiles are other optio
 $(document).ready(function() {
     Origami.fastclick(document.body);
 
+    setupText();
+
     $('.tile').on('click', onTileClick);
 });
 
@@ -32,6 +34,16 @@ $.fn.extend({
         });
     }
 });
+
+function setupText() {
+    $(".text").each(function(index, el) {
+        var pageName = this.dataset.page;
+        $.get( "/pages/" + pageName + ".md", function(data) {
+            var md = marked(data);
+            $(el).html(md);
+        });
+    });
+}
 
 function onTileClick(event) {
     if (CURRENT_STATE === "transition") {

@@ -3,4 +3,4 @@
 * Tasks:
     * Write proper copy
     * Find good quality pictures
-    * Maybe set up markdown parser and json configuration? 
+    * set up square register data

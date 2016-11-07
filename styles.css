@@ -23,17 +23,31 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-flow: column;
     height: 100vh;
+}
+
+a.buy {
+    text-decoration: none;
+}
+
+.buy div {
+    color: white;
+    background-color: seagreen;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
 .main-menu {
     display: flex;
-    height: 100%;
+    flex: 1;
 }
 
 .tile {
     flex: 1;
-    height: 100%;
     color: white;
     font-size: 2em;
     transition: transform 1s, opacity 1s;
@@ -80,7 +94,7 @@ body {
 .text {
     display: none;
     flex: 2;
-    font-size: 200%;
+    font-size: 150%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     transition: transform 0.75s, opacity 0.75s;    

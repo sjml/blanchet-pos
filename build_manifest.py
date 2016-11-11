@@ -9,10 +9,11 @@ IGNORE_FILES = [
     "build_manifest.py",
     "todo.txt",
     "cache.manifest",
-    "README.md",
+    "README.md"
 ]
 IGNORE_DIRS = [
-    ".git"
+    ".git",
+    "tmp"
 ]
 
 manifest_files = []

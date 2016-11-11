@@ -114,7 +114,7 @@ a.buy {
 }
 
 .tile[data-page='gifts'] {
-    background-image: url("./rsc/Bowl.jpg");
+    background-image: url("./rsc/Gifts.jpg");
     background-size: 100% auto;
     /*background-color: darkred;*/
 }
